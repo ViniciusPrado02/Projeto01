@@ -1,0 +1,151 @@
+139-162-5-218 login: ViniciusBau                                                                                                                                                                        
+Password:                                                                                                                                                                                               
+              ##############################################                                                                                                                                            
+              # webminal.org => your linux  ~ on the cloud #                                                                                                                                            
+              ##############################################                                                                                                                                            
+-sh-4.2$ cd                                                                                                                                                                                             
+-sh-4.2$ mkdir .uffs                                                                                                                                                                                    
+-sh-4.2$ mkdir ./uffs                                                                                                                                                                                   
+-sh-4.2$ pwd ./uffs                                                                                                                                                                                     
+/home/ViniciusBau                                                                                                                                                                                       
+-sh-4.2$ ls                                                                                                                                                                                             
+uffs
+-sh-4.2$ pwd ./uffs/home/aluno                                                                                                                                                                          
+/home/ViniciusBau                                                                                                                                                                                       
+-sh-4.2$ cd uffs                                                                                                                                                                                        
+-sh-4.2$ ls                                                                                                                                                                                             
+-sh-4.2$ /trabalho                                                                                                                                                                                      
+-sh: /trabalho: No such file or directory                                                                                                                                                               
+-sh-4.2$ mkdir ./trabalho                                                                                                                                                                               
+-sh-4.2$ ls                                                                                                                                                                                             
+trabalho
+-sh-4.2$ mkdir ./textos                                                                                                                                                                                 
+-sh-4.2$ ls                                                                                                                                                                                             
+textos  trabalho
+-sh-4.2$ touch teste.txt                                                                                                                                                                                
+-sh-4.2$ ls                                                                                                                                                                                             
+teste.txt  textos  trabalho
+-sh-4.2$ nano ($ nano teste.txt).                                                                                                                                                                       
+-sh: syntax error near unexpected token `$'                                                                                                                                                             
+-sh-4.2$ nano ($ nano teste.txt)                                                                                                                                                                        
+-sh: syntax error near unexpected token `$'                                                                                                                                                             
+-sh-4.2$ nano teste.txt                                                                                                                                                                                 
+-sh-4.2$ cp teste.txt teste1.txt                                                                                                                                                                        
+-sh-4.2$ cp teste.txt teste.asc                                                                                                                                                                         
+-sh-4.2$ ls                                                                                                                                                                                             
+teste1.txt  teste.asc  teste.txt  textos  trabalho
+-sh-4.2$ cp uffs/teste.txt uffs/trabalho                                                                                                                                                                
+cp: cannot stat ‘uffs/teste.txt’: No such file or directory                                                                                                                                             
+-sh-4.2$ cp teste.txt trabalho/teste.txt                                                                                                                                                                
+-sh-4.2$ cd trabalho                                                                                                                                                                                    
+-sh-4.2$ ls                                                                                                                                                                                             
+teste.txt                                                                                                                                                                                               
+-sh-4.2$ cd uffs                                                                                                                                                                                        
+-sh: cd: uffs: No such file or directory                                                                                                                                                                
+-sh-4.2$ tree                                                                                                                                                                                           
+.                                                                                                                                                                                                       
+└── teste.txt                                                                                                                                                                                           
+                                                                                                                                                                                                        
+0 directories, 1 file                                                                                                                                                                                   
+-sh-4.2$ back                                                                                                                                                                                           
+-sh: back: command not found                                                                                                                                                                            
+-sh-4.2$ cd ..                                                                                                                                                                                          
+-sh-4.2$ cd uffs                                                                                                                                                                                        
+-sh: cd: uffs: No such file or directory                                                                                                                                                                
+-sh-4.2$ ls                                                                                                                                                                                             
+teste1.txt  teste.asc  teste.txt  textos  trabalho
+-sh-4.2$ mv teste.asc textos                                                                                                                                                                            
+-sh-4.2$ ls                                                                                                                                                                                             
+teste1.txt  teste.txt  textos  trabalho
+-sh-4.2$ cd textos                                                                                                                                                                                      
+-sh-4.2$ ls-1                                                                                                                                                                                           
+-sh: ls-1: command not found                                                                                                                                                                            
+teste.ascls -1                                                                                                                                                                                          
+-sh-4.2$ cd ..                                                                                                                                                                                          
+-sh-4.2$ cd ..                                                                                                                                                                                          
+-sh-4.2$ ls                                                                                                                                                                                             
+uffs
+-sh-4.2$ cd uff                                                                                                                                                                                         
+-sh: cd: uff: No such file or directory                                                                                                                                                                 
+-sh-4.2$ cd uffs                                                                                                                                                                                        
+-sh-4.2$ ls                                                                                                                                                                                             
+teste1.txt  teste.txt  textos  trabalho
+-sh-4.2$ chmod 664 teste.txt                                                                                                                                                                            
+-sh-4.2$ chmod 644 teste1.txt                                                                                                                                                                           
+-sh-4.2$ cd ..                                                                                                                                                                                          
+-sh-4.2$ mkdir uffs_backup                                                                                                                                                                              
+-sh-4.2$ ls                                                                                                                                                                                             
+uffs  uffs_backup
+-sh-4.2$ cd uffs uffs_backup                                                                                                                                                                            
+-sh-4.2$ ls                                                                                                                                                                                             
+teste1.txt  teste.txt  textos  trabalho
+-sh-4.2$ cd ..                                                                                                                                                                                          
+-sh-4.2$ ls                                                                                                                                                                                             
+uffs  uffs_backup
+-sh-4.2$ cd uffs/textos                                                                                                                                                                                 
+-sh-4.2$ ls                                                                                                                                                                                             
+teste.asc                                                                                                                                                                                               
+-sh-4.2$ cp teste.asc trabalho                                                                                                                                                                          
+-sh-4.2$ rem textos                                                                                                                                                                                     
+-sh: rem: command not found                                                                                                                                                                             
+-sh-4.2$ cd ..                                                                                                                                                                                          
+-sh-4.2$ ls                                                                                                                                                                                             
+teste1.txt  teste.txt  textos  trabalho
+-sh-4.2$ rm textos                                                                                                                                                                                      
+rm: cannot remove ‘textos’: Is a directory                                                                                                                                                              
+-sh-4.2$ rmdir textos                                                                                                                                                                                   
+rmdir: failed to remove ‘textos’: Directory not empty                                                                                                                                                   
+-sh-4.2$ ls                                                                                                                                                                                             
+teste1.txt  teste.txt  textos  trabalho
+-sh-4.2$ cp textos                                                                                                                                                                                      
+cp: missing destination file operand after ‘textos’                                                                                                                                                     
+Try 'cp --help' for more information.                                                                                                                                                                   
+-sh-4.2$ cd textos                                                                                                                                                                                      
+-sh-4.2$ ls                                                                                                                                                                                             
+teste.asc  trabalho                                                                                                                                                                                     
+-sh-4.2$ rmdir trabalho                                                                                                                                                                                 
+rmdir: failed to remove ‘trabalho’: Not a directory                                                                                                                                                     
+-sh-4.2$ cd trabalho                                                                                                                                                                                    
+-sh: cd: trabalho: Not a directory                                                                                                                                                                      
+-sh-4.2$ cd ..                                                                                                                                                                                          
+-sh-4.2$ ls                                                                                                                                                                                             
+teste1.txt  teste.txt  textos  trabalho
+-sh-4.2$ rmdir textos                                                                                                                                                                                   
+rmdir: failed to remove ‘textos’: Directory not empty                                                                                                                                                   
+-sh-4.2$ cd textos                                                                                                                                                                                      
+-sh-4.2$ ls                                                                                                                                                                                             
+teste.asc  trabalho                                                                                                                                                                                     
+-sh-4.2$ cd ..                                                                                                                                                                                          
+-sh-4.2$ cp teste.asc trabalho                                                                                                                                                                          
+cp: cannot stat ‘teste.asc’: No such file or directory                                                                                                                                                  
+-sh-4.2$ cd textos                                                                                                                                                                                      
+-sh-4.2$ cp teste.asc trabalho                                                                                                                                                                          
+-sh-4.2$ ls                                                                                                                                                                                             
+teste.asc  trabalho                                                                                                                                                                                     
+-sh-4.2$ cd ..                                                                                                                                                                                          
+-sh-4.2$ ls                                                                                                                                                                                             
+teste1.txt  teste.txt  textos  trabalho
+-sh-4.2$ cd trabalho                                                                                                                                                                                    
+-sh-4.2$ ls trabalho                                                                                                                                                                                    
+ls: cannot access trabalho: No such file or directory                                                                                                                                                   
+-sh-4.2$ cd ..                                                                                                                                                                                          
+-sh-4.2$ rm textos                                                                                                                                                                                      
+rm: cannot remove ‘textos’: Is a directory                                                                                                                                                              
+-sh-4.2$ cp textos trabalho                                                                                                                                                                             
+cp: omitting directory ‘textos’                                                                                                                                                                         
+-sh-4.2$ rm -f textos                                                                                                                                                                                   
+rm: cannot remove ‘textos’: Is a directory                                                                                                                                                              
+-sh-4.2$ rm -ftextos                                                                                                                                                                                    
+rm: invalid option -- 't'                                                                                                                                                                               
+Try 'rm --help' for more information.                                                                                                                                                                   
+-sh-4.2$ rm -r textos                                                                                                                                                                                   
+-sh-4.2$ ls                                                                                                                                                                                             
+teste1.txt  teste.txt  trabalho
+-sh-4.2$ cd trabalho                                                                                                                                                                                    
+-sh-4.2$ ls                                                                                                                                                                                             
+teste.txt                                                                                                                                                                                               
+-sh-4.2$ mv teste.txt cd..                                                                                                                                                                              
+-sh-4.2$ ls                                                                                                                                                                                             
+cd..                                                                                                                                                                                                    
+-sh-4.2$ mv cd.. outro_texto.txt                                                                                                                                                                        
+-sh-4.2$ cat outro_texto.txt    
