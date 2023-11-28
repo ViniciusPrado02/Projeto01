@@ -1,0 +1,143 @@
+TI@TI-ACF MINGW64 ~ (master)
+$ git clone https://github.com/ViniciusPrado02/Projeto01
+Cloning into 'Projeto01'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+TI@TI-ACF MINGW64 ~ (master)
+$ cd Projeto01
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/TI/Projeto01/.git/
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ add readme.txt
+bash: add: command not found
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git add readme.txt
+fatal: pathspec 'readme.txt' did not match any files
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git add trabalho.txt
+fatal: pathspec 'trabalho.txt' did not match any files
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ ^C
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git add VINICIUS BAU PRADO DA ROSA
+fatal: pathspec 'VINICIUS' did not match any files
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git add VINICIUSBAUPRADODAROSA.docx
+fatal: pathspec 'VINICIUSBAUPRADODAROSA.docx' did not match any files
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git add teste.txt
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   teste.txt
+
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git commit -m
+error: switch `m' requires a value
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git commit -m teste.txt
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'TI@TI-ACF.(none)')
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git remove add origin https://github.com/ViniciusPrado02/Projeto01
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git remote add origin https://github.com/ViniciusPrado02/Projeto01
+error: remote origin already exists.
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git remote -v
+origin  https://github.com/ViniciusPrado02/Projeto01 (fetch)
+origin  https://github.com/ViniciusPrado02/Projeto01 (push)
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git push origin main
+Everything up-to-date
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git commit -m teste.txt
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'TI@TI-ACF.(none)')
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git commit -m
+error: switch `m' requires a value
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git config --global user.email viniciusbaupradodarosa@gmail.com
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git config --global user.name ViniciusPrado02
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git commit -m teste.txt
+[main c7a8b2e] teste.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 teste.txt
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes | 286.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ViniciusPrado02/Projeto01
+   6c5550e..c7a8b2e  main -> main
+
+TI@TI-ACF MINGW64 ~/Projeto01 (main)
+$
